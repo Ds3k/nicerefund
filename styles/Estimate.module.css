@@ -1,0 +1,49 @@
+.header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.ellipseGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ellipse {
+    width: 40px;
+    height: 40px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+}
+
+.button {
+    background: linear-gradient(278.13deg, #04DEB7 -16.06%, #0FBD44 29.86%, #69C054 68.32%, #CADE7A 130.81%);
+    border: none;
+    padding: 1rem 3rem;
+}
+
+@media screen and (max-width: 765px) {
+    .ellipseGroup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .formGrid {
+        display: block;
+    }
+
+    .formGrid input {
+        margin-bottom: 1rem;
+    }
+  
+}
