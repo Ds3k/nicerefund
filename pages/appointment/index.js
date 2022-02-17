@@ -1,27 +1,24 @@
 import { useState } from "react";
 import Head from "next/head";
-import Estimate1 from "../../components/Estimate1";
-import Estimate2 from "../../components/Estimate2";
-import Estimate3 from "../../components/Estimate3";
+import Appointment from "../../components/Appointment1";
+import Appointment2 from "../../components/Appointment2";
 import styles from "../../styles/Estimate.module.css";
 import { Button } from "react-bootstrap";
 
-export default function EstimateHome() {
+
+export default function AppointmentHome() {
   const [page, setPage] = useState(0);
 
   return (
     <>
       <Head>
-        <title>Quick Estimate</title>
-        <meta name="description" content="Handles " />
+        <title>Schedule Appointment</title>
+        <meta name="description" content="Handles" />
       </Head>
       <div className="container-fluid p-4">
-        <header className={styles.header}>
-          Individual Income Tax Organizer
-        </header>
-        {page === 0 && <Estimate1 />}
-        {page === 1 && <Estimate2 />}
-        {page === 2 && <Estimate3 />}
+        <header className={styles.header}>Schedule Appointment</header>
+        {page === 0 && <Appointment />}
+        {page === 1 && <Appointment2 />}
         <Button
           className={page === 1 ? styles.buttonOutline : "d-none"}
           onClick={() => {
@@ -34,14 +31,14 @@ export default function EstimateHome() {
           className={styles.buttonPrimary}
           type="submit"
           onClick={() => {
-            if (page === 2) {
+            if (page === 1) {
               alert("Form Submitted");
             } else {
               setPage((currPage) => currPage + 1);
             }
           }}
         >
-          {page === 2 ? "Done" : "Next"}
+          {page === 1 ? "Done" : "Next"}
         </Button>
       </div>
     </>

@@ -1,14 +1,13 @@
-import React from "react";
 import { Form, Button } from "react-bootstrap";
-import Ellipse from "../components/Ellipse";
 import styles from "../styles/Estimate.module.css";
+import TaxPreparer from "../components/TaxPreparer";
+import Ellipse from "../components/Ellipse";
 
-const Estimate1 = () => {
+const Appointment1 = () => {
   return (
     <>
       <div className={styles.ellipseGroup}>
-        <Ellipse active/>
-        <Ellipse />
+        <Ellipse active />
         <Ellipse />
       </div>
       <Form>
@@ -20,14 +19,28 @@ const Estimate1 = () => {
             <Form.Control type="email" placeholder="Email" />
             <Form.Control type="number" placeholder="Phone Number" />
           </div>
-
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
         </Form.Group>
+        <div>Select Tax Preparer</div>
+        <div className={styles.prepContainer}>
+          <TaxPreparer
+            imageSrc={"https://via.placeholder.com/300"}
+            preparer={"John Doe"}
+          />
+          <TaxPreparer
+            imageSrc={"https://via.placeholder.com/300"}
+            preparer={"John Doe"}
+          />
+          <TaxPreparer
+            imageSrc={"https://via.placeholder.com/300"}
+            preparer={"John Doe"}
+          />
+        </div>
       </Form>
     </>
   );
 };
 
-export default Estimate1;
+export default Appointment1;
