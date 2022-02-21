@@ -1,14 +1,21 @@
-import Layout from '../components/Layout'
-import '../styles/globals.css'
-import "bootstrap/dist/css/bootstrap.min.css";
+import Layout from "../components/Layout";
+import "../styles/globals.css";
+import "../styles/globals.scss";
+import "bootstrap/dist/css/bootstrap.css";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-    
-  ) 
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
