@@ -19,7 +19,9 @@ function Main() {
             <p className="overlay-para mt-5">
               Get a quick estimate of your refund
             </p>
-            <button className="btn text-uppercase">get started</button>
+            <Link href={`/estimate`} passHref>
+              <a className="btn btn text-uppercase">Get Started</a>
+            </Link>
           </div>
         </div>
       </div>
@@ -34,7 +36,7 @@ function Main() {
                 double check after you are done.
               </p>
               <div className="mt-5">
-                <a href="/" className="Link">
+                <a href="/estimate" className="Link">
                   {" "}
                   get started{" "}
                 </a>
@@ -46,7 +48,7 @@ function Main() {
                 file to receive your refunds from a previous tax year
               </p>
               <div className="mt-5">
-                <a className="Link" href="/">
+                <a className="Link" href="/estimate">
                   get started
                 </a>
               </div>

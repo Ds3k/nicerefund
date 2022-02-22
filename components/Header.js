@@ -40,6 +40,12 @@ function Header() {
               </span>
             </ul>
           </div>
+          <Link href={`/estimate`} passHref>
+            <a className="btn-green text-uppercase">
+              {" "}
+              estimate refunds{" "}
+            </a>
+          </Link>
           <button className="btn-green text-uppercase">
             {" "}
             estimate refunds{" "}
