@@ -1,0 +1,63 @@
+/* .dateInput::-webkit-datetime-edit{
+    background-color: red;
+    padding: 6px;
+    width: 100%;
+} 
+
+.dateInput::-webkit-datetime-edit-fields-wrapper{
+    background-color: red;
+    border-radius: 4px;
+    padding: 6px;
+    width: 100%;
+}
+
+.dateInput::-webkit-datetime-edit-ampm-field:focus{
+    background-color: blue;
+    border-radius: 4px;
+    padding: 6px;
+    width: 100%;
+}
+
+.dateInput::-webkit-datetime-edit-text{
+    background-color: pink;
+    border-radius: 4px;
+    padding: 6px;
+    width: 100%;
+}
+
+.dateInput::-webkit-inner-spin-button{
+    background-color: green;
+    border-radius: 4px;
+    padding: 6px;
+    width: 100%;
+}
+
+.dateInput::-webkit-calendar-picker-indicator{
+    background-color: yellow;
+    border-radius: 4px;
+    padding: 6px;
+    width: 100%;
+}
+
+.dateInput::-webkit-calendar-picker-indicator:hover{
+    background-color: orange;
+    border-radius: 4px;
+    padding: 6px;
+    width: 100%;
+} */
+
+.dateInput {
+    background-color: blue;
+    padding: 15px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.dateInput::-webkit-calendar-picker-indicator{
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}

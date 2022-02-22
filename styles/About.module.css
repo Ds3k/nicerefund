@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.header {
+  background: #fafafa;
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+}
+
+.heroImage img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+}
+
+.heroText {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-align: start;
+    position: absolute;
+    top: 15%;
+    right: 25%;
+    margin: 0 0 2rem 5rem;
+}
+
+.heroText h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid yellow;
+    white-space: nowrap;
+}
+
+.heroText p br {
+    margin-bottom: 2rem;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem;
+}
+
+.aboutImage {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.aboutImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutText {
+    flex: 1;
+    margin-right: 2rem;
+    font: 'Poppins', sans-serif;
+}
+
+.aboutText h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: green;
+}
+
+/* About Cards */
+.aboutCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid #eaeaea;
+    background: #F1F5F7;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    flex: 1;
+    margin: 1rem;
+    padding: 2rem 1rem;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.cardText {
+    font: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .heroText {
+        font-size: 0.5rem;
+        right: 10%;
+
+    }
+
+    .aboutSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+    }
+}
+    
