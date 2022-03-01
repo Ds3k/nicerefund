@@ -72,7 +72,7 @@ function Question() {
           <div className="list my-5">
             {faqs.map(faq => {
               const {id} = faq;
-              return <Questions faq={faq} key={id}/>;
+              return <Questions faq={faq} key={faq.id}/>;
             
             })}
           </div>
